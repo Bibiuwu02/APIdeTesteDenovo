@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake API</title>
+</head>
+<body>
+    <ul>
+        <li><a href="./create.html">Read: POST</a></li>
+        <li><a href="./read.html">Read: GE5</a></li>
+        <li><a href="./update.html">Read: PUT</a></li>
+        <li></li>
+    </ul>
+
+    <script>
+        const requisicao = new Request(
+            'htp://localshot3000/produtos/', {
+                method: "GET",
+                headers: {
+                    'Content-type': 'application/json',
+                }
+            }
+        )
+
+        fetch(requisicao)
+
+        .then(response => response.json())
+                    .then(response => JSON.stringify(response))
+            
+                .then(response ==> {
+                    console.log(response)
+            })
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Método PUT</title>
+</head>
+<body>
+    <h1>Método PUT</h1>
+
+    <div id="resposta"></div>
+
+    <form action="" method="post">
+
+        <label for="id">ID:</label>
+        <input type="number" id="id">
+        <br>
+        <br>
+    
+        <label for="nome_produto">Nome do produto:</label>
+        <input type="text" id="nme_produto">
+        <br>
+        <br>
+    
+        <label for="preco">Preço:</label>
+        <input type="text" id="preco">
+        <br>
+        <br>
+    
+        <button type="button" id="btnAtualizar">Atualizar</button>
+
+    </form>
+
+    <div id="listaProdutos"></div>
+
+    <script>
+        document.querySelector('#btnAtualizar').addEventListener('click',() => {
+
+            const id = document.querySelector('#id').value;
+            const nome_produto = document.querySelector('#nome_produto').value;
+            const preco = document.querySelector('#precos').value;
+
+            const dados = {
+                "id": null,
+                "nome_produto": nome_produto,
+                "preco": preco
+            };
+
+            fetch('http://localshot:3000/produtos/${id}', {
+                method: "PUT",
+                headers: {
+                    'Content-type': 'application/json',
+                },
+                body: JSON.stringify(dados)
+            })
+            .then(resposta => resposta.json())
+
+            //.then(resposta)
+        })
+    </script>
+</body>
+</html>
