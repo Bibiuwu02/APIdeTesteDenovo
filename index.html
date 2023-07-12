@@ -1,36 +1,36 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fake API</title>
+    <title>Formulários</title>
 </head>
+
 <body>
+    <h1>Métodos do HTTP</h1>
     <ul>
-        <li><a href="./create.html">Read: POST</a></li>
-        <li><a href="./read.html">Read: GE5</a></li>
-        <li><a href="./update.html">Read: PUT</a></li>
-        <li></li>
+        <li><a href="./create.html">Create: POST</a></li>
+        <li><a href="./read.html">Read: GET</a></li>
+        <li><a href="./update.html">Update: PUT</a></li>
+        <li><a href="./delete.html">Delete: DETETE</a></li>
     </ul>
 
     <script>
-        const requisicao = new Request(
-            'htp://localshot3000/produtos/', {
-                method: "GET",
-                headers: {
-                    'Content-type': 'application/json',
-                }
+        const requisicao = new Request('http://localhost:3000/produtos/', {
+            method: "GET", // <- Definimos o método HTTP para GET.
+            headers: {     // <- Definimos o header da requisição para JSON.
+                'Content-type': 'application/json',
             }
-        )
+        })
 
         fetch(requisicao)
-
-        .then(response => response.json())
-                    .then(response => JSON.stringify(response))
-            
-                .then(response ==> {
-                    console.log(response)
+            // .then(response => response.json())
+            // .then(response => JSON.stringify(response))
+            .then(response => {
+                console.log(response)
             })
     </script>
 </body>
+
 </html>

@@ -1,9 +1,37 @@
 {
+    "login": [
+      {
+        "id": 1,
+        "usuario": "admin",
+        "senha": "admin"
+      },
+      {
+        "id": 2,
+        "usuario": "joao",
+        "senha": "sdkgjhaljksgh"
+      }
+    ],
     "produtos": [
-            {
-                "id": 1,
-                "descricao": "sapato",
-                "preco": "43.50"
-            }
-    ]
-}
+      {
+        "id": 1,
+        "nome_produto": "Sapato marrom",
+        "preco": "159.99"
+      },
+      {
+        "id": 2,
+        "nome_produto": "Sapato branco",
+        "preco": "159.99"
+      },
+      {
+        "id": 3,
+        "nome_produto": "Sapato feminino Bronx",
+        "preco": "199.99"
+      },
+      {
+        "id": 4,
+        "nome_produto": "Sapato infantil Central Park",
+        "preco": "42.99"
+      }
+    ],
+    "pedidos": []
+  }
