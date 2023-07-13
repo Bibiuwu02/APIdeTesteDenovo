@@ -1,10 +1,12 @@
   @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-size: 16pt;
   }
+
   .update-body {
       width: 1440px;
       height: 1024px;
@@ -14,18 +16,18 @@
   }
 
   .tituloPut {
+      margin-top: 3vh;
+      margin-bottom: 3vh;
       color: #000;
       text-align: center;
       font-size: 32px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      flex-shrink: 0;
-      margin-bottom: 5vh;
-      margin-top: 3vh;
   }
 
   .formularioPut {
+      border: 12px;
       width: 420px;
       height: 439px;
       margin: auto;
@@ -33,19 +35,77 @@
       border-radius: 12px;
       background: #FFF;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
-      text-align: center;
+      padding-top: 7vh;
+      margin-bottom: 5vh;
   }
 
   .subtituloPut {
-      display: flex;
       width: 273px;
       height: 35px;
-      flex-direction: column;
+      flex-shrink: 0;
       color: #000;
       text-align: center;
       font-size: 24px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
-      padding-top: 2vh;
+      margin: auto;
+      margin-bottom: -5vh;
   }
+
+  .formularioPut label {
+      color: #000;
+      text-align: center;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      margin-left: 60px;
+  }
+
+  .formularioPut input {
+      display: flex;
+      width: 304px;
+      height: 34px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      border: 1px solid #000;
+      background: #FEFFE4;
+      box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
+      margin: auto;
+  }
+
+  .formularioPut button {
+      width: 167px;
+      height: 46px;
+      flex-shrink: 0;
+      border-radius: 4px;
+      background: #48A4FA;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      margin: auto;
+      margin-top: -3vh;
+      display: flex;
+      color: #FFF;
+      text-align: center;
+      font-family: Ubuntu;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 5px;
+      padding-left: 30px;
+      padding-top: 8px;
+  }
+
+  #listaProdutos {
+      width: 243px;
+      height: 38px;
+      flex-shrink: 0;
+      color: #000;
+      font-family: Ubuntu;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+  }
+  
