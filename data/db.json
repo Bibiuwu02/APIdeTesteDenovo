@@ -14,22 +14,22 @@
   "produtos": [
     {
       "id": 1,
-      "nome_produto": "",
-      "preco": ""
+      "nome_produto": "Sapato de palhaço",
+      "preco": "9999,999,99,9"
     },
     {
       "id": 2,
-      "nome_produto": "Sapato branco",
+      "nome_produto": "Sapato masculino",
       "preco": "159.99"
     },
     {
       "id": 3,
-      "nome_produto": "Sapato feminino Bronx",
+      "nome_produto": "Sapato feminino",
       "preco": "199.99"
     },
     {
       "id": 4,
-      "nome_produto": "Sapato infantil Central Park",
+      "nome_produto": "Sapato infantil",
       "preco": "42.99"
     }
   ],

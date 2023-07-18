@@ -17,7 +17,7 @@
 
   .tituloPut {
       margin-top: 3vh;
-      margin-bottom: 3vh;
+      margin-bottom: 4vh;
       color: #000;
       text-align: center;
       font-size: 32px;
@@ -56,9 +56,9 @@
   .formularioPut label {
       color: #000;
       text-align: center;
-      font-size: 16px;
+      font-size: 18px;
+      font-weight: 450;
       font-style: normal;
-      font-weight: 400;
       line-height: normal;
       margin-left: 60px;
   }
@@ -73,12 +73,14 @@
       background: #FEFFE4;
       box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
       margin: auto;
+      font-style: italic;
+      font-size: 16px;
+      color: #9A9A9A;
   }
 
   .formularioPut button {
       width: 167px;
       height: 46px;
-      flex-shrink: 0;
       border-radius: 4px;
       background: #48A4FA;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -97,10 +99,15 @@
       padding-top: 8px;
   }
 
+  .tituloLista {
+    margin-bottom: 2vh;
+    font-size: 24px;
+    font-weight: 425;
+  }
+
   #listaProdutos {
       width: 243px;
       height: 38px;
-      flex-shrink: 0;
       color: #000;
       font-family: Ubuntu;
       font-size: 24px;
@@ -108,4 +115,33 @@
       font-weight: 400;
       line-height: normal;
   }
-  
+
+  #listaProdutos .tabelaProdutos tr {
+      width: 1332px;
+      height: 43px;
+      margin: auto;
+      border-bottom: 1px solid #000;
+      background: #FFF;
+      display: flex;
+      justify-content: space-around;
+  }
+
+  #listaProdutos .tabelaProdutos tr:nth-child(even) {
+      width: 1332px;
+      height: 43px;
+      margin: auto;
+      border-bottom: 1px solid #000;
+      background: #FFF1C1;
+      display: flex;
+      justify-content: space-around;
+    }
+    
+    #listaProdutos .tabelaProdutos td {
+        width: 179.672px;
+        height: 8.500px;
+        display: flex;
+        text-align: center;
+        margin: auto;
+        text-align: center;
+        line-height: 1.0;
+  }
