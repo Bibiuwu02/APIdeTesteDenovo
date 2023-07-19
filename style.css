@@ -65,26 +65,39 @@
 
   .formularioPut input {
       display: flex;
+      justify-content: center;
       width: 304px;
       height: 34px;
-      flex-shrink: 0;
       border-radius: 4px;
       border: 1px solid #000;
       background: #FEFFE4;
       box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.25) inset;
       margin: auto;
-      font-style: italic;
+      margin-bottom: -30px;
       font-size: 16px;
       color: #9A9A9A;
   }
 
-  .formularioPut button {
+  .formularioPut input:placeholder-shown {
+    font-style: italic;
+ }
+
+  .buttons {
+    margin-top: 50px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .formularioPut #btnAtualizar {
       width: 167px;
       height: 46px;
       border-radius: 4px;
+      border-color: #fff;
       background: #48A4FA;
       box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
       margin: auto;
+      margin-left: 58px;
       margin-top: -3vh;
       display: flex;
       color: #FFF;
@@ -98,11 +111,46 @@
       padding-left: 30px;
       padding-top: 8px;
   }
+  .formularioPut #btnAtualizar:hover {
+    background-color: #007BED;
+  }
+  .formularioPut #btnAtualizar:active {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
+
+  .formularioPut #btnCancelar {
+      width: 118px;
+      height: 46px;
+      border-radius: 4px;
+      background: #F59999;
+      border-color: #fff;
+      box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      margin: auto;
+      margin-right: 57px;
+      margin-top: -3vh;
+      display: flex;
+      color: #FFF;
+      text-align: center;
+      font-family: Ubuntu;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      padding: 5px;
+      padding-left: 10px;
+      padding-top: 8px;
+  }
+  .formularioPut #btnCancelar:hover {
+    background-color: #FF5F5F;
+  }
+  .formularioPut #btnCancelar:active {
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  }
 
   .tituloLista {
-    margin-bottom: 2vh;
-    font-size: 24px;
-    font-weight: 425;
+      margin-bottom: 2vh;
+      font-size: 24px;
+      font-weight: 425;
   }
 
   #listaProdutos {
@@ -134,14 +182,14 @@
       background: #FFF1C1;
       display: flex;
       justify-content: space-around;
-    }
-    
-    #listaProdutos .tabelaProdutos td {
-        width: 179.672px;
-        height: 8.500px;
-        display: flex;
-        text-align: center;
-        margin: auto;
-        text-align: center;
-        line-height: 1.0;
+  }
+
+  #listaProdutos .tabelaProdutos td {
+      width: 179.672px;
+      height: 8.500px;
+      display: flex;
+      text-align: center;
+      margin: auto;
+      text-align: center;
+      line-height: 1.0;
   }

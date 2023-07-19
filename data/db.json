@@ -15,7 +15,7 @@
     {
       "id": 1,
       "nome_produto": "Sapato de palhaço",
-      "preco": "9999,999,99,9"
+      "preco": "1.99"
     },
     {
       "id": 2,
@@ -29,8 +29,8 @@
     },
     {
       "id": 4,
-      "nome_produto": "Sapato infantil",
-      "preco": "42.99"
+      "nome_produto": "",
+      "preco": ""
     }
   ],
   "pedidos": []
