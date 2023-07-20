@@ -14,23 +14,27 @@
   "produtos": [
     {
       "id": 1,
-      "nome_produto": "Sapato de palhaço",
-      "preco": "1.99"
+      "descricao": "Sapato de palhaço",
+      "preco": "1.99",
+      "imagem": "sapato.png"
     },
     {
       "id": 2,
-      "nome_produto": "Sapato masculino",
-      "preco": "159.99"
+      "descricao": "Sapato masculino",
+      "preco": "159.99",
+      "imagem": "sapato.png"
     },
     {
       "id": 3,
-      "nome_produto": "Sapato feminino",
-      "preco": "199.99"
+      "descricao": "Sapato feminino",
+      "preco": "199.99",
+      "imagem": "sapato.png"
     },
     {
       "id": 4,
-      "nome_produto": "",
-      "preco": ""
+      "descricao": "",
+      "preco": "",
+      "imagem": "sapato.png"
     }
   ],
   "pedidos": []

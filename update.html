@@ -33,6 +33,8 @@
         <label for="preco">text</label>
         <input type="number" id="preco" placeholder="  digite o preço do produto"><br><br>
 
+        <img id="imagem" src="sapato.png" alt="imagem">
+
         <div class="buttons">
             <button type="button" id="btnAtualizar">Atualizar</button>
             <button type="reset" id="btnCancelar">Cancelar</button>
@@ -55,17 +57,19 @@
             const id = document.querySelector('#id').value;
             const nome_produto = document.querySelector('#nome_produto').value;
             const preco = document.querySelector('#preco').value;
+            const imagem = document.querySelector('#imagem').value;
 
             /* Definindo o modelo de dados que será transmitido e atribuindo
              os dados para cada chave do nosso modelo. */
             const dados = {
                 "id": null,
                 "nome_produto": nome_produto,
-                "preco": preco
+                "preco": preco,
+                "imagem": imagem
             };
 
             /* Aqui faremos a requisição e o tratamento da resposta */
-            fetch(`http://localhost:3000/produtos/${id}`, {
+            fetch(`https://json-server-tawny-mu.vercel.app/produtos/${id}`, {
                 method: "PUT", // <- Definimos o método HTTP para PUT.
                 headers: {     // <- Definimos o header da requisição para JSON.
                     'Content-type': 'application/json', 
@@ -93,7 +97,7 @@
         function getProdutos() {
 
             /* Aqui faremos a requisição e o tratamento da resposta */
-            fetch(`http://localhost:3000/produtos`, {
+            fetch(`https://json-server-tawny-mu.vercel.app/produtos`, {
                 method: "GET", // <- definimos o método HTTP para PUT
                 headers: {     // <- definimos o header da requisição para JSON
                     'Content-type': 'application/json',

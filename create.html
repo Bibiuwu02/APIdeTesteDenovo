@@ -61,7 +61,7 @@
             };
 
             /* Aqui faremos a requisição e o tratamento da resposta */
-            fetch(`http://localhost:3000/produtos`, {
+            fetch(`https://json-server-tawny-mu.vercel.app/produtos`, {
                 method: "POST", // <- Definimos o método HTTP para PUT.
                 headers: {     // <- Definimos o header da requisição para JSON.
                     'Content-type': 'application/json', 
@@ -89,7 +89,7 @@
         function getProdutos() {
 
             /* Aqui faremos a requisição e o tratamento da resposta */
-            fetch(`http://localhost:3000/produtos`, {
+            fetch(`https://json-server-tawny-mu.vercel.app/produtos`, {
                 method: "GET", // <- definimos o método HTTP para PUT
                 headers: {     // <- definimos o header da requisição para JSON
                     'Content-type': 'application/json',
